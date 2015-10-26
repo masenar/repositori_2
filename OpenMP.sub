@@ -1,0 +1,10 @@
+#!/bin/bash
+#$ -cwd
+#$ -q test.q
+#$ -l h_rt=1000
+
+DATA_DIR=/home/caos/galaxy/DATA/BioMaster
+BWA_DIR=/home/caos/masenar/BWA//bwa-0.7.7
+
+time ./exemple_OMP_1
+ 

@@ -1,0 +1,63 @@
+Intel(R) Advisor can now assist with vectorization and show optimization
+  report messages with your source code.
+See "https://software.intel.com/en-us/intel-advisor-xe" for details.
+
+Begin optimization report for: main()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at exemple_OMP_vector_2_2.c(21,7)
+   remark #15301: OpenMP SIMD LOOP WAS VECTORIZED
+   remark #15449: unmasked aligned unit stride stores: 2 
+   remark #15475: --- begin vector loop cost summary ---
+   remark #15476: scalar loop cost: 8 
+   remark #15477: vector loop cost: 3.500 
+   remark #15478: estimated potential speedup: 2.260 
+   remark #15487: type converts: 2 
+   remark #15488: --- end vector loop cost summary ---
+LOOP END
+
+LOOP BEGIN at exemple_OMP_vector_2_2.c(27,2)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+LOOP END
+
+LOOP BEGIN at exemple_OMP_vector_2_2.c(36,8)
+<Peeled loop for vectorization>
+LOOP END
+
+LOOP BEGIN at exemple_OMP_vector_2_2.c(36,8)
+   remark #15301: SIMD LOOP WAS VECTORIZED
+   remark #15448: unmasked aligned unit stride loads: 1 
+   remark #15449: unmasked aligned unit stride stores: 1 
+   remark #15450: unmasked unaligned unit stride loads: 1 
+   remark #15475: --- begin vector loop cost summary ---
+   remark #15476: scalar loop cost: 6 
+   remark #15477: vector loop cost: 3.000 
+   remark #15478: estimated potential speedup: 1.820 
+   remark #15488: --- end vector loop cost summary ---
+LOOP END
+
+LOOP BEGIN at exemple_OMP_vector_2_2.c(41,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+LOOP END
+
+LOOP BEGIN at exemple_OMP_vector_2_2.c(48,8)
+<Peeled loop for vectorization>
+LOOP END
+
+LOOP BEGIN at exemple_OMP_vector_2_2.c(48,8)
+   remark #15301: SIMD LOOP WAS VECTORIZED
+   remark #15448: unmasked aligned unit stride loads: 2 
+   remark #15449: unmasked aligned unit stride stores: 1 
+   remark #15475: --- begin vector loop cost summary ---
+   remark #15476: scalar loop cost: 6 
+   remark #15477: vector loop cost: 3.000 
+   remark #15478: estimated potential speedup: 1.820 
+   remark #15488: --- end vector loop cost summary ---
+LOOP END
+
+LOOP BEGIN at exemple_OMP_vector_2_2.c(53,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+LOOP END
+===========================================================================
