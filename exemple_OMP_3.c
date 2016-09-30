@@ -5,6 +5,7 @@
 #define N 50
 #define CHUNCKSIZE 5
  
+ /*This line added to test SmartGit */
  
 int main ()  {
 
