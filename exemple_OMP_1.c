@@ -3,6 +3,8 @@
 int  a, b, i, tid;
 float x;
  
+ /*this line added to test Git GUI*/
+ 
 #pragma omp threadprivate(a, x)
  
 main ()  {
