@@ -4,7 +4,7 @@ int  a, b, i, tid;
 float x;
  
 #pragma omp threadprivate(a, x)
- 
+ /*A small change to tesk git */
 main ()  {
  
 /* Explicitly turn off dynamic threads */
